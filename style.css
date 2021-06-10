@@ -1,0 +1,274 @@
+h1 {
+    color:skyblue;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(49, 97, 112);
+}
+
+h2 {
+    color:teal;
+}
+
+.title {
+    color:rgb(114, 53, 114);
+}
+
+#italic {
+    color: rgb(180, 180, 61);
+}
+
+nav {
+    background-color: rgb(129, 140, 153);
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.nav-wrapper {
+    background-color:rgb(99, 127, 136);
+}
+
+
+.container {
+    border: 2px dashed rgb(110, 110, 216); 
+    margin: 50px;
+    padding: 20px;
+}
+
+
+
+.box {
+    text-align: center;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+    background: lightblue;
+    margin: 10px;
+    
+}
+
+.circle {
+    text-align: justify;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background: rgb(120, 123, 126);
+}
+
+#circle1 {
+    color:rgb(49, 97, 112);
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 10px 10px 15px 16px rgb(144, 177, 192) inset;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, rgb(112, 169, 223), rgb(235, 151, 221), rgb(219, 146, 189), rgb(236, 218, 177), rgb(235, 190, 235));
+}
+
+@keyframes getbigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    80% {transform: scale(.5);}
+    100% {transform: scale(1);}
+}
+
+#box3 {
+    animation: getbigger 6s infinite ease-out;
+    border-radius: 50%;
+    background:rgb(153, 153, 211)
+}
+
+@keyframes changecolour {
+    0% {background-color: rgb(131, 119, 119);}
+    25% {background-color: rgb(228, 219, 181);}
+    50% {background-color: rgb(132, 189, 149);}
+    75% {background-color: rgb(164, 211, 230);}
+    100% {background-color: rgb(131, 119, 119);}
+}
+
+#box4 {
+    animation: changecolour 2s infinite linear;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 200px; top: 0px;}
+    50% {left: 200px; top: -100px;}
+    75% {left: 0px; top: -100px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    background:rgb(131, 119, 119);
+    animation: moveBox 2s infinite;
+}
+
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+
+html {
+    background-color: rgb(189, 187, 187);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.circle-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 5px 5px 10px rgb(140, 148, 153);
+}
+
+.flex {
+    border: 3px solid grey; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.flex2 {
+    border: 3px solid rgb(189, 187, 187);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#circle1 {
+    text-align: center;
+    text-decoration-color: black;
+}
+
+#circle2 {
+    text-align: right;
+}
+
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 70px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+    box-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color:#fff;;
+    color: #444;
+  }
+
+  .Box {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+  .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .c {
+    grid-column: col 1 / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(124, 124, 190), rgb(161, 114, 161), rgb(202, 170, 175), rgb(187, 183, 183));
+  }
+  .d {
+    grid-column: col 1 / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+  }
+
+  .e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(99, 127, 136);
+  }
